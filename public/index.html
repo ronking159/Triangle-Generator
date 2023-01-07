@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Generator</title>
 </head>
 <body>
-    
+    <div id="wrapper">
+        <div id="options">
+                <legend>Angles</legend>
+                <input type="radio" name="angle" id="acute" value="0"><label for="acute">Acute</label><br />
+                <input type="radio" name="angle" id="right" value="1"><label for="right">Right</label><br />
+                <input type="radio" name="angle" id="obtuse" value="2"><label for="obtuse">Obtuse</label>
+            </fieldset>
+        </div>
+        <div id="main"></div>
+    </div>
 </body>
 </html>
